@@ -374,6 +374,7 @@ html { overflow: hidden; }
   padding: 5px;
   border-left: 1px solid #DDDDDD;
   border-right: 1px solid #DDDDDD;
+  font-family: Courier;
 }
 
 .chat-message span{

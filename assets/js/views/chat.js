@@ -150,6 +150,9 @@ var ChatView = Backbone.View.extend({
 
   addMessage: function(msg) {
     var $chatWindow = this.$('#chat-contents');
+	var lastMsg = $chatWindow.last();
+	var lastMsgSender = $.trim(lastMsg.$('.chat_message').text());
+	var lastMsgTime_s = $.trim(lastMsg.$('.chat_time').text());
     var view = new MessageView({model: msg});
     var sender = msg.get('sender');
     var type = msg.get('type');

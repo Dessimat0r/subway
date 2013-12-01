@@ -49,7 +49,7 @@ html { overflow: hidden; }
 
 .sidebar > h2 {
   text-align: center;
-  line-height: 0.9em;
+  line-height: 0.6em;
   margin-top: 0.3em;
 }
 
@@ -163,7 +163,7 @@ html { overflow: hidden; }
 }
 
 #channels > .channel {
-  padding: 5% 5% 5% 20%;
+  padding: 5px 5px 5px 20px;
   color: #333333;
   border-bottom: 1px solid #CCCCCC;
 }
@@ -334,7 +334,7 @@ html { overflow: hidden; }
 }
 
 .message_notification{
-  padding: 1% 0% 1% 1%;
+  padding: 4px 4px 8px 10px;
 }
 
 .join_img, .part_img, .topic_img{
@@ -362,7 +362,7 @@ html { overflow: hidden; }
   display: table-cell;
   width: 14%;
   vertical-align: top;
-  padding: 1% 0% 1% 1%;
+  padding: 5px;
   max-width: 50px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -370,9 +370,8 @@ html { overflow: hidden; }
 
 .chat-message {
   display: table-cell;
-  width: 66%;
-  max-width: 200px;
-  padding: 1%;
+  width: auto;
+  padding: 5px;
   border-left: 1px solid #DDDDDD;
   border-right: 1px solid #DDDDDD;
 }
@@ -414,7 +413,7 @@ div.embed-toggle {
   vertical-align: top;
   color: #888888;
   text-align: center;
-  padding: 1% 0% 1% 0%;
+  padding: 5px;
   width: 20%;
 }
 
@@ -441,10 +440,10 @@ div.embed-toggle {
   width: 100%;
 }
 
-.userlist_user_activity{
+.userlist_user_activity {
   width: 13%;
   display: table-cell;
-  padding: 2%;
+  padding: 3px 0 3px 3px;
   background: #EFEFEF;
   text-align: center;
   border-right: 1px solid #DDDDDD;
@@ -468,7 +467,7 @@ div.embed-toggle {
 .userlist_user_info{
   display: table-cell;
   width: 87%;
-  padding: 3% 0% 3% 5%;
+  padding: 3px 0 3px 3px;
 }
 
 .userlist_user_name{

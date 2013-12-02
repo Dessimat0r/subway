@@ -153,9 +153,14 @@ var ChatView = Backbone.View.extend({
 	var lastMsg = $chatWindow.last();
 	var lastMsgSender = $.trim(lastMsg.$('.chat_message').text());
 	var lastMsgTime_s = $.trim(lastMsg.$('.chat_time').text());
-    var view = new MessageView({model: msg});
     var sender = msg.get('sender');
     var type = msg.get('type');
+	var view = null;
+	if (lastMsgSender === sender) {
+		view = new MessageView({model: {nick: "poop", msg: msg.get('text')}});
+	} else {
+		view = new MessageView({model: msg});
+	}
 
     var nicksToIgnore = ['', 'notice', 'status'];
 

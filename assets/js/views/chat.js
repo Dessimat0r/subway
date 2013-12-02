@@ -156,8 +156,8 @@ var ChatView = Backbone.View.extend({
     var sender = msg.get('sender');
     var type = msg.get('type');
 	var view = null;
-	if (lastMsgSender === sender) {
-		view = new MessageView({model: {user: "poop", content: msg.get('text')}});
+	if (type == 'message' && lastMsgSender === sender) {
+		view = new MessageView({model: {user: 'poop', content: msg.get('text')}});
 	} else {
 		view = new MessageView({model: msg});
 	}
